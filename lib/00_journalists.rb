@@ -39,7 +39,6 @@ end
 
 def q4
     a = journalistes
-    b = 0
     a.map {|i| if i.index(/[A-Z]/) == 1 then b = b + 1 end}
     puts "Combien commencent par une majuscule (première lettre juste après le @) ? Réponse : #{b}"
 end
@@ -48,7 +47,6 @@ def q5
     a = journalistes
     b = 0
     puts "Combien contiennent une majuscule ? Réponse : #{a.grep(/[A-Z]/).length}"
-    #print b
 end
 
 def q6
